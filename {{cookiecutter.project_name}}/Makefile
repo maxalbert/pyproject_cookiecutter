@@ -1,4 +1,4 @@
-MODULE = {{cookiecutter.project_name}}
+MODULE = {{cookiecutter.pymodule_name}}
 
 all: test
 

@@ -1,5 +1,5 @@
 # Specification of conda environment for this project.
-name: {{cookiecutter.project_name}}
+name: {{cookiecutter.pymodule_name}}
 dependencies:
   - python
   - pytest
