@@ -3,5 +3,5 @@
     "project_short_descr": "",
     "pymodule_name": "{{cookiecutter.project_name | lower | replace(' ', '-') }}",
     "author": "Maximilian Albert",
-    "year": "2016"
+    "year": "2018"
 }
