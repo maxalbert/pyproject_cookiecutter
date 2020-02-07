@@ -1,3 +1,4 @@
+import versioneer
 from setuptools import setup, find_packages
 from codecs import open
 from os import path
@@ -8,11 +9,9 @@ here = path.abspath(path.dirname(__file__))
 with open(path.join(here, "README.md"), encoding="utf-8") as f:
     long_description = f.read()
 
-__version__ = "0.1.0"
-
 setup(
     name="{{ cookiecutter.project_slug }}",
-    version=__version__,
+    version=versioneer.get_version(),
     description="{{ cookiecutter.project_short_description }}",
     long_description=long_description,
     url="https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}",
@@ -34,4 +33,5 @@ setup(
     packages=["{{ cookiecutter.project_slug }}"],
     install_requires=[],
     extras_require={"dev": ["ipython", "jupyter"], "test": ["pytest"]},
+    cmdclass=versioneer.get_cmdclass(),
 )

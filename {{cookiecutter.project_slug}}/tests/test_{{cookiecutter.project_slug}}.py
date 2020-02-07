@@ -3,4 +3,4 @@ from {{ cookiecutter.project_slug }} import __version__
 
 
 def test_version():
-    assert __version__ == "{{ cookiecutter.project_version   }}"
+    assert __version__.startswith("{{ cookiecutter.project_version   }}")
