@@ -29,4 +29,9 @@ Developers:
 * [Internal reference guide](reference.md#internal-reference-guide)
 
 
+## Changelog
+
+- [Changelog](changelog.md)
+
+
 _This documentation structure is based on Daniele Procida's excellent [article](https://www.divio.com/blog/documentation/) on the Divio blog._
