@@ -10,7 +10,15 @@ The first time you run this it will prompt you for a few parameter values. Chang
 
 Let's say you provided the value `project_slug="foobar_project"`
 
-3. Change into the newly created project directory and use `poetry` to install dependencies for your project.
+3. Check contents of the generated files and tweak as needed
+
+In most cases you probably won't need to adjust the values, but double-check if you are unsure.
+
+- `pyproject.toml` (Python version; list of dependencies and their versions)
+- `setup.py` (project name & description; author name & email; GitHub URL; license; classifiers; etc.)
+
+
+4. Change into the newly created project directory and use `poetry` to install dependencies for your project.
 ```
 $ cd foobar_project
 $ poetry install
