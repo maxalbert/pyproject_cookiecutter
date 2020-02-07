@@ -1,23 +1,27 @@
-# Overview
+# {{ cookiecutter.project_name }}
 
-_TODO: Write a brief overview!_
-
-{{ cookiecutter.project_short_description }}
+_TODO: Add a brief overview here._
 
 
 ## Tutorials
 
-* [First steps with `{{ cookiecutter.project_slug }}`](tutorials.md#first-steps-with-{{ cookiecutter.project_slug }})
+* [First steps](tutorials.md#first-steps)
 
 ## How-To Guides
 
-- [Users](how-to/users.md): how-to guides for users of `{{ cookiecutter.project_slug }}`
-- [Developers](how-to/developers.md): instructions for developers
+Users:
+
+- [How to do XYZ](how_to/users.md)
+
+Developers:
+
+- [Setting up a development environment](how_to/developers.md#setting-up-a-development-environment)
+- [Running the tests](how_to/developers.md#running-the-tests)
 
 
 ## Discussions
 
-* [Why {{ cookiecutter.project_slug }}?](discussions.md#why-{{ cookiecutter.project_slug }})
+* [How is `{{ cookiecutter.project_slug }}` different from XYZ?](discussions.md#how-is-{{ cookiecutter.project_slug }}-from-xyz)
 
 
 ## Reference

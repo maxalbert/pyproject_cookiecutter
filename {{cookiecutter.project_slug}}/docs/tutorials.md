@@ -1,14 +1,14 @@
 # Tutorials
 
-A tutorial:
+_A tutorial:_
 
-* is learning-oriented
-* allows the newcomer to get started
-* is a lesson
+* _is learning-oriented_
+* _allows the newcomer to get started_
+* _is a lesson_
 
-(See [here](https://www.divio.com/blog/documentation/) for context and more information.)
+_(See [here](https://www.divio.com/blog/documentation/) for context and more information.)_
 
 
-## First steps with `{{ cookiecutter.project_slug }}`
+## First steps
 
 _TODO: Write me!_

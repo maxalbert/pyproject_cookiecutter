@@ -1,17 +1,20 @@
 site_name: {{ cookiecutter.project_name }}
 nav:
-   - index.md
+   - 'Home': index.md
+   - 'Tutorials': tutorials.md
    - 'How-To Guides':
-      - how_to/users.md
-      - how_to/developers.md
+      - 'Users': how_to/users.md
+      - 'Developers': how_to/developers.md
+   - 'Discussions': discussions.md
+   - 'Reference': reference.md
 theme:
    name: "material"
 
    # Default values, taken from mkdocs_theme.yml
    language: en
    feature:
-     # True to use tabs at the top, in addition to the side navbar
-     tabs: true
+     # Set to true to use tabs at the top, in addition to the side navbar
+     tabs: false
    font:
      text: Roboto
      code: Roboto Mono
@@ -20,4 +23,4 @@ theme:
      accent: "#2977B8"
    logo:
      # This is the default "academic hat" logo
-     icon: \uE80C"
+     icon: "\uE80C"

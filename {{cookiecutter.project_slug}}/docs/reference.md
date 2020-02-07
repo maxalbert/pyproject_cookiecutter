@@ -1,12 +1,12 @@
 # Reference
 
-A reference guide:
+_A reference guide:_
 
-- is information-oriented
-- describes the machinery
-- is accurate and complete
+- _is information-oriented_
+- _describes the machinery_
+- _is accurate and complete_
 
-(See [here](https://www.divio.com/blog/documentation/) for context and more information.)
+_(See [here](https://www.divio.com/blog/documentation/) for context and more information.)_
 
 ## Internal Reference Guide
 

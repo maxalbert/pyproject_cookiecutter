@@ -1,14 +1,14 @@
 # Discussions
 
-A discussion:
+_A discussion:_
 
-- is understanding-oriented
-- explains
-- provides background and context
+- _is understanding-oriented_
+- _explains_
+- _provides background and context_
 
-(See [here](https://www.divio.com/blog/documentation/) for context and more information.)
+_(See [here](https://www.divio.com/blog/documentation/) for context and more information.)_
 
 
-## Why {{ cookiecutter.project_slug }}?
+## How is `{{ cookiecutter.project_slug }}` different from XYZ?
 
 _TODO: Write me!_

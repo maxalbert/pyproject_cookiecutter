@@ -1,3 +1,12 @@
-## How-To Guides For Users
+_A how-to guide:_
 
-**TODO: Write me!**
+- _is goal-oriented_
+- _shows how to solve a specific problem_
+- _is a series of steps_
+
+_(See [here](https://www.divio.com/blog/documentation/) for context and more information.)_
+
+
+## How to do XYZ
+
+_TODO: Write me!_

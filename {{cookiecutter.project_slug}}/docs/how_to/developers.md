@@ -1,8 +1,8 @@
 ## Setting up a development environment
 
-{{ cookiecutter.project_slug.title() }} uses [poetry](https://python-poetry.org/) for dependency management, so make sure you have it [installed](https://python-poetry.org/docs/#installation).
+`{{ cookiecutter.project_slug }}` uses [poetry](https://python-poetry.org/) for dependency management, so make sure you have it [installed](https://python-poetry.org/docs/#installation).
 
-Then install the necessary dependencies for {{ cookiecutter.project_slug }}:
+Next, install the necessary dependencies for {{ cookiecutter.project_slug }}:
 ```
 $ poetry install --no-root
 ```
@@ -24,3 +24,4 @@ collected 1 item
 tests/test_{{ cookiecutter.project_slug }}.py .                                           [100%]
 
 =========================== 1 passed in 0.11 seconds ===========================
+```
