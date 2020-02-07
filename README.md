@@ -29,6 +29,14 @@ Make sure you have the following tools installed before.
    ```
    The first time you run this it will prompt you for a few parameters. Tweak the relevant values, or simply accept the defaults (by pressing Enter).
 
+   This will then create the project skeleton based on the provided values.
+
+   It will also run some automated tasks which do the following:
+     - Put the project under version control.
+     - Install project dependencies (in a new poetry virtual environment).
+     - Initialise version management with versioneer.
+     - Tag the project git repo with the initial version number (as previously provided via the parameter values).
+
 2. Check the generated files and tweak the contents as needed.
 
    *Note:* In most cases you probably won't need to adjust the values, but double-check if you are unsure.
@@ -39,36 +47,8 @@ Make sure you have the following tools installed before.
    - `setup.py` (project name & description; author name & email; GitHub URL; license; classifiers; etc.)
    - Rename the test file `tests/test_<project_name>.py` and/or add additional test files.
 
-3. Change into the newly created project directory and put it under version control.
+3. Run the tests to check that everything was installed successfully.
    ```
-   $ cd <project_name>
-
-   $ git init
-   $ git add .
-   $ git commit -a -m "Initial commit"
-   ```
-
-4. Use `poetry` to install dependencies for your project (poetry will conveniently create a new virtual [environment](https://python-poetry.org/docs/managing-environments/) for your project).
-   ```
-   $ poetry install --no-root
-   ```
-   Note that we use the `--no-root` option so that the package itself does not get installed as a dependency
-
-5. Initialise version management.
-   ```
-   $ poetry run versioneer install
-   $ git add .
-   $ git commit -a -m "Initialise version management"
-   ```
-
-6. Run the tests.
-
-   *Note:* The test checks the project version. Since we are using `versioneer` for version management, we need to tag the current git version first.
-   ```
-   $ git tag 0.1.0  # TODO: this should happen automatically in a cookiecutter hook
-   ```
-
-   Then we can run the tests.
-   ```
+   $ cd <project_name>/
    $ poetry run pytest
    ```
