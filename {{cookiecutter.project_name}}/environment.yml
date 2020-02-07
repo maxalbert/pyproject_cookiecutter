@@ -1,8 +1,0 @@
-# Specification of conda environment for this project.
-name: {{cookiecutter.pymodule_name}}
-dependencies:
-  - python
-  - pytest
-  - pytest-cov
-  - pip:
-      - yapf
