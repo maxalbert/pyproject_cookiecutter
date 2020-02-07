@@ -20,6 +20,6 @@ git commit -a -m "Initialise version management"
 
 # Tag git repo with initial version
 echo "\nTagging git repo with initial version '{{ cookiecutter.project_version }}'"
-git tag {{ cookiecutter.project_version }}
+git tag -f {{ cookiecutter.project_version }}
 
 echo "\nDone. All tasks completed successfully."
