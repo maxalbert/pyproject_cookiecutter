@@ -1,0 +1,8 @@
+{
+    "project_name": "Python Project Template",
+    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
+    "project_version": "0.1.0",
+    "project_short_description": "Template for Python projects, containing a minimal skeleton for a Python package and tests.",
+    "author_name": "Maximilian Albert",
+    "author_email": "maximilian.albert@gmail.com"
+}
