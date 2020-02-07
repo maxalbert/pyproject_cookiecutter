@@ -8,6 +8,7 @@ echo "Putting project under version control ..."
 git init
 git add .
 git commit -a -m "Initial commit"
+git tag -f "initial_commit"
 
 # Install project dependencies (but not the project itself)
 echo ""
