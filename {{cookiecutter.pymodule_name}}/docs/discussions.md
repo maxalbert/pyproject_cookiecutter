@@ -9,6 +9,6 @@ _A discussion:_
 _(See [here](https://www.divio.com/blog/documentation/) for context and more information.)_
 
 
-## How is `{{ cookiecutter.project_slug }}` different from XYZ?
+## How is `{{ cookiecutter.pymodule_name }}` different from XYZ?
 
 _TODO: Write me!_

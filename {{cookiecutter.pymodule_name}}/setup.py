@@ -10,11 +10,11 @@ with open(path.join(here, "README.md"), encoding="utf-8") as f:
     long_description = f.read()
 
 setup(
-    name="{{ cookiecutter.project_slug }}",
+    name="{{ cookiecutter.pymodule_name }}",
     version=versioneer.get_version(),
     description="{{ cookiecutter.project_short_description }}",
     long_description=long_description,
-    url="https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}",
+    url="https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.pymodule_name }}",
     author="{{ cookiecutter.author_name }}",
     author_email="{{ cookiecutter.author_email }}",
     license="MPLv2",
@@ -30,7 +30,7 @@ setup(
         "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3.8",
     ],
-    packages=["{{ cookiecutter.project_slug }}"],
+    packages=["{{ cookiecutter.pymodule_name }}"],
     install_requires=[],
     extras_require={"dev": ["ipython", "jupyter"], "test": ["pytest"]},
     cmdclass=versioneer.get_cmdclass(),

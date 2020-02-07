@@ -21,7 +21,7 @@ Developers:
 
 ## Discussions
 
-* [How is `{{ cookiecutter.project_slug }}` different from XYZ?](discussions.md#how-is-{{ cookiecutter.project_slug }}-from-xyz)
+* [How is `{{ cookiecutter.pymodule_name }}` different from XYZ?](discussions.md#how-is-{{ cookiecutter.pymodule_name }}-from-xyz)
 
 
 ## Reference

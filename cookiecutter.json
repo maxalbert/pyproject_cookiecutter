@@ -1,6 +1,6 @@
 {
     "project_name": "Python Project Template",
-    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
+    "pymodule_name": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
     "project_short_description": "Template for Python projects, containing a minimal skeleton for a Python package and tests.",
     "project_version": "0.1.0",
     "license": [

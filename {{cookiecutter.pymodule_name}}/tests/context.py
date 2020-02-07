@@ -10,4 +10,4 @@ import sys
 #
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
-import {{ cookiecutter.project_slug }}
+import {{ cookiecutter.pymodule_name }}
