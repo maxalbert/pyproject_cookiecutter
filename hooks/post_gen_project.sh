@@ -27,5 +27,10 @@ echo ""
 echo "Tagging git repo with initial version '{{ cookiecutter.project_version }}'"
 git tag -f {{ cookiecutter.project_version }}
 
+# Build documentation skeleton
+echo ""
+echo "Building documentation skeleton (output will be placed in site/) ..."
+poetry run mkdocs build
+
 echo ""
 echo "Done. All tasks completed successfully."
