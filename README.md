@@ -50,5 +50,15 @@ Make sure you have the following tools installed before.
 3. Run the tests to check that everything was installed successfully.
    ```
    $ cd <project_name>/
-   $ poetry run pytest
+   $ make regular-tests
+   $ make notebook-tests
    ```
+
+4. Create a new GitHub repository for the project (ideally you should give it the same name as the Python project, otherwise you will need to fix the links in the badges at the top of the `README.md` file).
+   Then upload the local repo to Github (including the tags which have been automatically created):
+   ```
+   $ git remote add origin git@github.com:<github_username>/<project_name>.git
+   $ git push --tags --set-upstream origin master
+   ```
+
+5. Go to your CircleCI dashboard and add the new GitHub repo to start running CI on it.
