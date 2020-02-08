@@ -10,7 +10,8 @@ git add .
 git commit -a -m "Initial commit"
 git tag -f "initial_commit"
 
-# Install project dependencies (but not the project itself)
+# Install project dependencies (but not the project itself yet because
+# we need to initialise version management with versioneer first).
 echo ""
 echo "Installing project dependencies (in a new poetry virtual environment) ..."
 poetry install --no-root
@@ -32,6 +33,12 @@ git commit -a -m "Initialise version management"
 echo ""
 echo "Tagging git repo with initial version '{{ cookiecutter.project_version }}'"
 git tag -f {{ cookiecutter.project_version }}
+
+# Install the project itself into the virtual environment, too
+# (so that the notebook tests can pick it up, for example).
+echo ""
+echo "Installing {{ cookiecutter.pymodule_name }} into virtual environment"
+poetry install
 
 # Build documentation skeleton
 echo ""
