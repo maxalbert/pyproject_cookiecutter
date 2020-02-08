@@ -14,13 +14,14 @@ python = "^3.6"
 [tool.poetry.dev-dependencies]
 pytest = "^3.0"
 pytest-cov = "^2.8.1"
-tox = "^3.14.0"
-mkdocs = "^1.0.4"
-mkdocs-material = "^4.6.0"
 ipython = "^7.12.0"
 jupyterlab = "^1.2.6"
-versioneer = "^0.18"
+mkdocs = "^1.0.4"
+mkdocs-material = "^4.6.0"
+nbval = "*"
 pre-commit = "*"
+tox = "^3.14.0"
+versioneer = "^0.18"
 
 [build-system]
 requires = ["poetry>=0.12"]
