@@ -1,1 +1,1 @@
-# __init__.py for `{{ cookiecutter.pymodule_name }}`
+# __init__.py file for `{{ cookiecutter.pymodule_name }}`

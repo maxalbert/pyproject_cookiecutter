@@ -15,10 +15,16 @@ echo ""
 echo "Installing project dependencies (in a new poetry virtual environment) ..."
 poetry install --no-root
 
+# Install the git pre-commit hook for code formatting with `black`
+echo ""
+echo "Installing git pre-commit hook for code formatting with 'black'"
+poetry run pre-commit install
+
 # Initialise version management
 echo ""
 echo "Initialising version management using versioneer ..."
 poetry run versioneer install
+poetry run black .
 git add .
 git commit -a -m "Initialise version management"
 
