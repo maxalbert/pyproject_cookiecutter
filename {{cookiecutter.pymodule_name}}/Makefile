@@ -11,9 +11,13 @@ test: regular-tests notebook-tests
 regular-tests:
 	$(PYTEST) --cov=$(PYMODULE_NAME) $(PATH_TO_UNIT_TESTS)
 
-# Validate jupyter notebooks using nbval
+# Validate jupyter notebooks using nbval.
+#
+# Note that for the time being we deactivate coverage reports for notebook tests due
+# to a bug in nbval (see https://github.com/computationalmodelling/nbval/issues/116).
 notebook-tests:
-	$(PYTEST) --nbval --sanitize-with=nbval_sanitize_file.cfg --cov=$(PYMODULE_NAME) $(PATH_TO_NOTEBOOK_TESTS)
+#	$(PYTEST) --nbval --sanitize-with=nbval_sanitize_file.cfg --cov=$(PYMODULE_NAME) $(PATH_TO_NOTEBOOK_TESTS)
+	$(PYTEST) --nbval --sanitize-with=nbval_sanitize_file.cfg $(PATH_TO_NOTEBOOK_TESTS)
 
 # Build documentation
 docs:
