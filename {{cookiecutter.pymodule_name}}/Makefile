@@ -11,7 +11,7 @@ unit-tests:
 	$(PYTEST) --cov=$(PYMODULE_NAME) $(PATH_TO_UNIT_TESTS)
 
 notebook-tests:
-	$(PYTEST) --nbval --sanitize-with nbval_sanitize_file.cfg --cov=$(PYMODULE_NAME) $(PATH_TO_NOTEBOOK_TESTS)
+	$(PYTEST) --nbval --sanitize-with=nbval_sanitize_file.cfg --cov=$(PYMODULE_NAME) $(PATH_TO_NOTEBOOK_TESTS)
 
 # Build distribution tarball and wheel
 dist:
