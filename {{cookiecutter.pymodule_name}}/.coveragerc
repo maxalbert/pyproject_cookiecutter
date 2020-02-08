@@ -7,7 +7,7 @@ omit =
     */tests/*
     */_version.py
     */versioneer.py
-    *__init__*
+    # *__init__*
 
 exclude_lines =
     # Need to explicitly re-enable the standard pragma
