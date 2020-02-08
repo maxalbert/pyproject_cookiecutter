@@ -29,6 +29,11 @@ Developers:
 * [Internal reference guide](reference.md#internal-reference-guide)
 
 
+## API Reference
+
+* [API reference]({{ cookiecutter.pymodule_name }}/{{ cookiecutter.pymodule_name }}/)
+
+
 ## Changelog
 
 - [Changelog](changelog.md)
