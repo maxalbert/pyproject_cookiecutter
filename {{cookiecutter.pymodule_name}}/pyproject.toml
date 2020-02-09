@@ -13,17 +13,16 @@ python = "^3.6"
 
 [tool.poetry.dev-dependencies]
 black = "^19.10b0"
-pytest = "^3.0"
-pytest-cov = "^2.8.1"
-ipython = "^7.12.0"
-jupyterlab = "^1.2.6"
-mkdocs = "^1.0.4"
-mkdocs-material = "^4.6.0"
+pytest = "*"
+pytest-cov = "*"
+ipython = "*"
+jupyterlab = "*"
+mkdocs = "*"
+mkdocs-material = "*"
 mktheapidocs = {extras = ["plugin"], version = "*"}
 nbval = "*"
 pre-commit = "*"
-tox = "^3.14.0"
-versioneer = "^0.18"
+versioneer = "*"
 
 [build-system]
 requires = ["poetry>=0.12"]
