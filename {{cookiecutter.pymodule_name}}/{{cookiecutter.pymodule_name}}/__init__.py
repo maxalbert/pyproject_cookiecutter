@@ -1,3 +1,5 @@
-# __init__.py file for `{{ cookiecutter.pymodule_name }}`
+"""
+{{ cookiecutter.project_description }}
+"""
 
 from .dummy import dummy_function
