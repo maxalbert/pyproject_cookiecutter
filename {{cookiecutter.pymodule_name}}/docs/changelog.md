@@ -24,5 +24,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Initial project skeleton.
 
 
-[unreleased]: https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.pymodule_name }}/compare/{{ cookiecutter.project_version }}...master
-[{{ cookiecutter.project_version }}]: https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.pymodule_name }}/compare/initial_commit...{{ cookiecutter.project_version }}
+[unreleased]: https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.github_project_name }}/compare/{{ cookiecutter.project_version }}...master
+[{{ cookiecutter.project_version }}]: https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.github_project_name }}/compare/initial_commit...{{ cookiecutter.project_version }}

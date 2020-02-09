@@ -14,7 +14,7 @@ setup(
     version=versioneer.get_version(),
     description="{{ cookiecutter.project_short_description }}",
     long_description=long_description,
-    url="https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.pymodule_name }}",
+    url="https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.github_project_name }}",
     author="{{ cookiecutter.author_name }}",
     author_email="{{ cookiecutter.author_email }}",
     license="MPLv2",
