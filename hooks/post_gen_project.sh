@@ -52,6 +52,10 @@ ssh-keygen -t rsa -b 4096 -m PEM -N "" -f ./ssh_deploy_keys/ssh_deploy_key
 # Rename the  key files for clarity
 mv ./ssh_deploy_keys/ssh_deploy_key ./ssh_deploy_keys/ssh_deploy_key_PRIVATE.txt
 mv ./ssh_deploy_keys/ssh_deploy_key.pub ./ssh_deploy_keys/ssh_deploy_key_PUBLIC.txt
+# Add SSH key fingerprint to CircleCI config (so that docs can be pushed to the gh-pages branch)
+SSH_KEY_FINGERPRINT=$(ssh-keygen -l -E md5 -f ./ssh_deploy_keys/ssh_deploy_key_PUBLIC.txt | awk '{print $2}' | sed -e 's/^MD5://')
+sed -i "" -e "s/__PLACEHOLDER_SSH_KEY_FINGERPRINT__/${SSH_KEY_FINGERPRINT}/"  ./.circleci/config.yml
+git commit -a -m "Add fingerprint for ssh deploy key"
 
 echo ""
 echo "Done. All tasks completed successfully."

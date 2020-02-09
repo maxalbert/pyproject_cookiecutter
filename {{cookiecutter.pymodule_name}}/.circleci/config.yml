@@ -5,6 +5,9 @@ jobs:
       - image: circleci/python:3.8
     steps:
       - checkout
+      - add_ssh_keys:
+          fingerprints:
+            - "__PLACEHOLDER_SSH_KEY_FINGERPRINT__"
       - run:
           name: Install Python dependencies
           command: poetry install
@@ -13,4 +16,4 @@ jobs:
           command: make test
       - run:
           name: Build and deploy documentation
-          command: poetry run mkdocs gh-deploy -m "Deployed {sha} with MkDocs version: {version} [ci skip]"
+          command: poetry run mkdocs gh-deploy -m "Deployed {sha} with MkDocs version {version} [ci skip]"
