@@ -31,11 +31,13 @@ Make sure you have the following tools installed before.
 
    This will then create the project skeleton based on the provided values.
 
-   It will also run some automated tasks which do the following:
+   It will also run some automated tasks which perform the following steps (see `hooks/post_gen_project.sh`).
      - Put the project under version control.
      - Install project dependencies (in a new poetry virtual environment).
+     - Install a git pre-commit hook for code formatting with `black`
      - Initialise version management with versioneer.
-     - Tag the project git repo with the initial version number (as previously provided via the parameter values).
+     - Create an SSH deploy key pair (for automated deployment of the docs during CI builds).
+     - Tag the project git repo with the initial version number.
 
 2. Check the generated files and tweak the contents as needed.
 
@@ -62,3 +64,5 @@ Make sure you have the following tools installed before.
    ```
 
 5. Go to your CircleCI dashboard and add the new GitHub repo to start running CI on it.
+
+6. Upload the SSH deploy keys to CircleCI and GitHub (see `ssh_deploy_keys/README.md` in your newly created repo for instructions).
