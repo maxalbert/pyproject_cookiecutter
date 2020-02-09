@@ -12,6 +12,8 @@ nav:
    - 'Changelog': changelog.md
 theme:
    name: "material"
+   include_search_page: false
+   search_index_only: true
 
    # Default values, taken from mkdocs_theme.yml
    language: en
@@ -28,6 +30,7 @@ theme:
      # This is the default "academic hat" logo
      icon: "\uE80C"
 plugins:
+  - search
   - mktheapidocs:
       modules:
         {{ cookiecutter.pymodule_name }}:
