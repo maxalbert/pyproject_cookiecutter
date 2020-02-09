@@ -14,7 +14,7 @@ git tag -f "initial_commit"
 # we need to initialise version management with versioneer first).
 echo ""
 echo "Installing project dependencies (in a new poetry virtual environment) ..."
-poetry install --no-root
+poetry install --no-root --extras "develop testing docs deploy"
 
 # Install the git pre-commit hook for code formatting with `black`
 echo ""
@@ -50,7 +50,7 @@ git tag -f {{ cookiecutter.project_version }}
 # (so that the notebook tests can pick it up, for example).
 echo ""
 echo "Installing {{ cookiecutter.pymodule_name }} into virtual environment"
-poetry install
+poetry install --extras "develop testing docs deploy"
 
 # Build documentation skeleton
 echo ""

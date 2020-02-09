@@ -11,20 +11,29 @@ authors = ["{{ cookiecutter.author_name }} <{{ cookiecutter.author_email }}>"]
 [tool.poetry.dependencies]
 python = "^3.6"
 
+black = { version = "^19.10b0", optional = true }
+pre-commit = { version = "*", optional = true }
+ipython = { version = "*", optional = true }
+jupyterlab = { version = "*", optional = true }
+
+mkdocs = { version = "*", optional = true }
+mkdocs-material = { version = "*", optional = true }
+mktheapidocs = { version = "*", extras = ["plugin"], optional = true}
+
+nbval = { version = "*", optional = true }
+pytest = { version = "*", optional = true }
+pytest-cov = { version = "*", optional = true }
+
+twine = { version = "*", optional = true }
+wheel = { version = "*", optional = true }
+
 [tool.poetry.dev-dependencies]
-black = "^19.10b0"
-pytest = "*"
-pytest-cov = "*"
-ipython = "*"
-jupyterlab = "*"
-mkdocs = "*"
-mkdocs-material = "*"
-mktheapidocs = {extras = ["plugin"], version = "*"}
-nbval = "*"
-pre-commit = "*"
-twine = "*"
-versioneer = "*"
-wheel = "*"
+
+[tool.poetry.extras]
+develop = ["black", "pre-commit", "ipython", "jupyterlab"]
+testing = ["pytest", "pytest-cov", "nbval"]
+docs = ["mkdocs", "mkdocs-material", "mktheapidocs"]
+deploy = ["twine", "wheel"]
 
 [build-system]
 requires = ["poetry>=0.12"]

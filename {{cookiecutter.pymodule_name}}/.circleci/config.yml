@@ -1,6 +1,17 @@
-version: 2
 jobs:
-  build:
+  test:
+    docker:
+      - image: circleci/python:3.8
+    steps:
+      - checkout
+      - run:
+          name: Install Python dependencies
+          command: poetry install --extras "testing"
+      - run:
+          name: Run tests
+          command: make test
+
+  deploy-docs:
     docker:
       - image: circleci/python:3.8
     steps:
@@ -10,10 +21,19 @@ jobs:
             - "__PLACEHOLDER_SSH_KEY_FINGERPRINT__"
       - run:
           name: Install Python dependencies
-          command: poetry install
-      - run:
-          name: Run tests
-          command: make test
+          command: poetry install --extras "docs"
       - run:
           name: Build and deploy documentation
-          command: poetry run mkdocs gh-deploy -m "Deployed {sha} with MkDocs version {version} [ci skip]"
+          command: poetry run mkdocs gh-deploy -m "Deployed {sha} with MkDocs version {version} [CI SKIP]"
+
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - test
+      - deploy-docs:
+          requires:
+            - test
+          filters:
+            branches:
+              only: master
