@@ -6,6 +6,7 @@ Please describe your work and make sure your PR:
 - [ ] adds new tests (if appropriate)
 - [ ] adds or updates any relevant documentation (if appropriate)
 - [ ] updates docstrings for any new functions or function arguments (if appropriate)
+- [ ] updates `docs/CHANGELOG.md` (if appropriate)
 
 Note that your PR will not be reviewed unless all boxes above are checked.
 

@@ -36,7 +36,7 @@ Developers:
 
 ## Changelog
 
-- [Changelog](changelog.md)
+- [Changelog](CHANGELOG.md)
 
 
 _This documentation structure is based on Daniele Procida's excellent [article](https://www.divio.com/blog/documentation/) on the Divio blog._

@@ -9,7 +9,7 @@ nav:
    - 'Reference': reference.md
    - 'API Reference':
       - api-docs-{{ cookiecutter.pymodule_name }}
-   - 'Changelog': changelog.md
+   - 'Changelog': CHANGELOG.md
 theme:
    name: "material"
    include_search_page: false
