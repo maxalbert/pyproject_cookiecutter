@@ -30,6 +30,8 @@ theme:
      icon: "\uE80C"
 plugins:
   - search
+  - awesome-pages:
+      collapse_single_pages: false
   - mktheapidocs:
       modules:
         {{ cookiecutter.pymodule_name }}:
