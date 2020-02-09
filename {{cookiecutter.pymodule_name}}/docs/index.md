@@ -14,6 +14,7 @@ Documentation:
 Technical reference:
 
 - [API Reference]({{ cookiecutter.pymodule_name }}/{{ cookiecutter.pymodule_name }}/)
+- [Architectural Decision Records](ADRs/README.md)
 - [Changelog](CHANGELOG.md)
 
 

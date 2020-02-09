@@ -7,6 +7,7 @@ nav:
    - 'Reference': reference.md
    - 'API Reference':
       - api-docs-{{ cookiecutter.pymodule_name }}
+   - 'Architectural Decision Records': ADRs/README.md
    - 'Changelog': CHANGELOG.md
 theme:
    name: "material"
