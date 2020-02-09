@@ -35,3 +35,7 @@ plugins:
         {{ cookiecutter.pymodule_name }}:
           section: {{ cookiecutter.pymodule_name }}
           source_repo: "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.github_project_name }}/tree/master/{{ cookiecutter.pymodule_name }}"
+  - mknotebooks:
+      execute: false
+      # preamble: "notebook_preamble.py"
+      # timeout: 600
