@@ -17,6 +17,7 @@ ipython = { version = "*", optional = true }
 jupyterlab = { version = "*", optional = true }
 
 mkdocs = { version = "*", optional = true }
+mkdocs-awesome-pages-plugin = { version = "*", optional = true }
 mkdocs-material = { version = "*", optional = true }
 mknotebooks = { version = "*", optional = true }
 mktheapidocs = { version = "*", extras = ["plugin"], optional = true}
@@ -33,7 +34,7 @@ wheel = { version = "*", optional = true }
 [tool.poetry.extras]
 develop = ["black", "pre-commit", "ipython", "jupyterlab"]
 testing = ["pytest", "pytest-cov", "nbval"]
-docs = ["mkdocs", "mkdocs-material", "mknotebooks", "mktheapidocs"]
+docs = ["mkdocs", "mkdocs-awesome-pages-plugin", "mkdocs-material", "mknotebooks", "mktheapidocs"]
 deploy = ["twine", "wheel"]
 
 [build-system]
