@@ -2,7 +2,7 @@
 
 _A reference guide:_
 
-- _is information-oriented_
+- _is **information-oriented**_
 - _describes the machinery_
 - _is accurate and complete_
 

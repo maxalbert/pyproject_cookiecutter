@@ -2,7 +2,7 @@
 
 _A discussion:_
 
-- _is understanding-oriented_
+- _is **understanding-oriented**_
 - _explains_
 - _provides background and context_
 

@@ -1,6 +1,6 @@
 _A how-to guide:_
 
-- _is goal-oriented_
+- _is **goal-oriented**_
 - _shows how to solve a specific problem_
 - _is a series of steps_
 

@@ -2,7 +2,7 @@
 
 _A tutorial:_
 
-* _is learning-oriented_
+* _is **learning-oriented**_
 * _allows the newcomer to get started_
 * _is a lesson_
 
