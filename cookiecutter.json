@@ -1,7 +1,9 @@
 {
     "project_name": "Python Project Template",
     "project_short_description": "Template for Python projects, containing a minimal skeleton for a Python package and tests.",
-    "pymodule_name": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
+    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
+    "github_project_name": "{{ cookiecutter.project_slug }}",
+    "pymodule_name": "{{ cookiecutter.github_project_name }}",
     "project_version": "0.1.0",
     "license": [
         "MPL-2.0"

@@ -29,6 +29,18 @@ poetry run black .
 git add .
 git commit -a -m "Initialise version management"
 
+# Create SSH key pair (with empty passphrase) for deployment of the docs
+echo ""
+echo "Creating SSH deploy key pair (files will be placed in ./ssh_deploy_keys/ ) ..."
+ssh-keygen -t rsa -b 4096 -m PEM -N "" -f ./ssh_deploy_keys/ssh_deploy_key
+# Rename the  key files for clarity
+mv ./ssh_deploy_keys/ssh_deploy_key ./ssh_deploy_keys/ssh_deploy_key_PRIVATE.txt
+mv ./ssh_deploy_keys/ssh_deploy_key.pub ./ssh_deploy_keys/ssh_deploy_key_PUBLIC.txt
+# Add SSH key fingerprint to CircleCI config (so that docs can be pushed to the gh-pages branch)
+SSH_KEY_FINGERPRINT=$(ssh-keygen -l -E md5 -f ./ssh_deploy_keys/ssh_deploy_key_PUBLIC.txt | awk '{print $2}' | sed -e 's/^MD5://')
+sed -i "" -e "s/__PLACEHOLDER_SSH_KEY_FINGERPRINT__/${SSH_KEY_FINGERPRINT}/"  ./.circleci/config.yml
+git commit -a -m "Add fingerprint for ssh deploy key"
+
 # Tag git repo with initial version
 echo ""
 echo "Tagging git repo with initial version '{{ cookiecutter.project_version }}'"
@@ -44,18 +56,6 @@ poetry install
 echo ""
 echo "Building documentation skeleton (output will be placed in site/) ..."
 poetry run mkdocs build
-
-# Create SSH key pair (with empty passphrase) for deployment of the docs
-echo ""
-echo "Creating SSH deploy key pair (files will be placed in ./ssh_deploy_keys/ ) ..."
-ssh-keygen -t rsa -b 4096 -m PEM -N "" -f ./ssh_deploy_keys/ssh_deploy_key
-# Rename the  key files for clarity
-mv ./ssh_deploy_keys/ssh_deploy_key ./ssh_deploy_keys/ssh_deploy_key_PRIVATE.txt
-mv ./ssh_deploy_keys/ssh_deploy_key.pub ./ssh_deploy_keys/ssh_deploy_key_PUBLIC.txt
-# Add SSH key fingerprint to CircleCI config (so that docs can be pushed to the gh-pages branch)
-SSH_KEY_FINGERPRINT=$(ssh-keygen -l -E md5 -f ./ssh_deploy_keys/ssh_deploy_key_PUBLIC.txt | awk '{print $2}' | sed -e 's/^MD5://')
-sed -i "" -e "s/__PLACEHOLDER_SSH_KEY_FINGERPRINT__/${SSH_KEY_FINGERPRINT}/"  ./.circleci/config.yml
-git commit -a -m "Add fingerprint for ssh deploy key"
 
 echo ""
 echo "Done. All tasks completed successfully."
