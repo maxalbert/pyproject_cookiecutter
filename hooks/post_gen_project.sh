@@ -45,5 +45,13 @@ echo ""
 echo "Building documentation skeleton (output will be placed in site/) ..."
 poetry run mkdocs build
 
+# Create SSH key pair (with empty passphrase) for deployment of the docs
+echo ""
+echo "Creating SSH deploy key pair (files will be placed in ./ssh_deploy_keys/ ) ..."
+ssh-keygen -t rsa -b 4096 -m PEM -N "" -f ./ssh_deploy_keys/ssh_deploy_key
+# Rename the  key files for clarity
+mv ./ssh_deploy_keys/ssh_deploy_key ./ssh_deploy_keys/ssh_deploy_key_PRIVATE.txt
+mv ./ssh_deploy_keys/ssh_deploy_key.pub ./ssh_deploy_keys/ssh_deploy_key_PUBLIC.txt
+
 echo ""
 echo "Done. All tasks completed successfully."
