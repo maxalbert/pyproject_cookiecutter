@@ -13,4 +13,4 @@ jobs:
           command: make test
       - run:
           name: Build and deploy documentation
-          command: poetry run mkdocs gh-deploy
+          command: poetry run mkdocs gh-deploy -m "Deployed {sha} with MkDocs version: {version} [ci skip]"
