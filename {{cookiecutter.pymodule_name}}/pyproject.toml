@@ -22,6 +22,7 @@ mkdocs-material = "*"
 mktheapidocs = {extras = ["plugin"], version = "*"}
 nbval = "*"
 pre-commit = "*"
+twine = "*"
 versioneer = "*"
 wheel = "*"
 
