@@ -23,6 +23,7 @@ mktheapidocs = {extras = ["plugin"], version = "*"}
 nbval = "*"
 pre-commit = "*"
 versioneer = "*"
+wheel = "*"
 
 [build-system]
 requires = ["poetry>=0.12"]
