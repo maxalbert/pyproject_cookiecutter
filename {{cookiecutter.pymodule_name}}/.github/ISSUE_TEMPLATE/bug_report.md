@@ -25,7 +25,7 @@ labels: ''
 
 
 ## Version And Environment
-*The version(s) of `{{ cookiecutter.github_project_name }}` you are using (and any additional helpful information about your environment).*
+*The affected version of the software, and any additional helpful information about your environment (operating system, Python version, etc.)*
 
 
 
