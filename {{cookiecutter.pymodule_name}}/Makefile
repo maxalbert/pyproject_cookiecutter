@@ -21,12 +21,16 @@ notebook-tests:
 	$(PYTEST) --nbval --sanitize-with=nbval_sanitize_file.cfg $(PATH_TO_NOTEBOOK_TESTS)
 
 # Build documentation
-docs:
+build-docs:
 	poetry run mkdocs build
+
+# Serve documentation locally (during development)
+serve-docs:
+	poetry run mkdocs serve
 
 # Build distribution tarball and wheel
 dist:
 	mkdir -p dist/
 	$(PYTHON) setup.py sdist bdist_wheel
 
-.PHONY: all test regular-tests notebook-tests docs dist
+.PHONY: all test regular-tests notebook-tests build-docs serve-docs dist
