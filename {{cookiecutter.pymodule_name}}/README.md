@@ -4,3 +4,5 @@
 
 
 {{ cookiecutter.project_short_description }}
+
+The documentation can be found [here](https://{{ cookiecutter.github_username }}.github.io/{{ cookiecutter.github_project_name }}/).
