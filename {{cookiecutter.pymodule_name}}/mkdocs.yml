@@ -2,9 +2,7 @@ site_name: {{ cookiecutter.project_name }}
 nav:
    - 'Home': index.md
    - 'Tutorials': tutorials.md
-   - 'How-To Guides':
-      - 'Users': how_to/users.md
-      - 'Developers': how_to/developers.md
+   - 'How-To Guides': how_to_guides.md
    - 'Discussions': discussions.md
    - 'Reference': reference.md
    - 'API Reference':

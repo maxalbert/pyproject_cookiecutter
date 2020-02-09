@@ -11,12 +11,12 @@ _TODO: Add a brief overview here._
 
 Users:
 
-- [How to do XYZ](how_to/users.md)
+- [How to do XYZ](how_to_guides.md#how-to-do-xyz)
 
 Developers:
 
-- [Setting up a development environment](how_to/developers.md#setting-up-a-development-environment)
-- [Running the tests](how_to/developers.md#running-the-tests)
+- [Setting up a development environment](how_to_guides_.md#setting-up-a-development-environment)
+- [Running the tests](how_to_guides_.md#running-the-tests)
 
 
 ## Discussions
