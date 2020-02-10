@@ -6,6 +6,8 @@ set -euo pipefail
 echo ""
 echo "Putting project under version control ..."
 git init
+git config --local user.name "{{ cookiecutter.author_name }}"
+git config --local user.email "{{ cookiecutter.author_email }}"
 git add .
 git commit -a -m "Initial commit"
 git tag -f "initial_commit"
