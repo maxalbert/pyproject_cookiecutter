@@ -22,11 +22,11 @@ plugins:
   - search
   - awesome-pages:
       collapse_single_pages: false
-  - mktheapidocs:
-      modules:
-        {{ cookiecutter.pymodule_name }}:
-          section: {{ cookiecutter.pymodule_name }}
-          source_repo: "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.github_project_name }}/tree/master/"
+  # - mktheapidocs:
+  #     modules:
+  #       {{ cookiecutter.pymodule_name }}:
+  #         section: {{ cookiecutter.pymodule_name }}
+  #         source_repo: "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.github_project_name }}/tree/master/"
   - mknotebooks:
       execute: false
       # preamble: "notebook_preamble.py"

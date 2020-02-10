@@ -4,6 +4,6 @@ arrange:
   - how_to_guides
   - discussions
   - reference_guides
-  - api-docs-{{ cookiecutter.pymodule_name }}
+  # - api-docs-{{ cookiecutter.pymodule_name }}
   - ADRs
   - CHANGELOG.md
