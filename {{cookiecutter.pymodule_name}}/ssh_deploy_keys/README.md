@@ -6,10 +6,10 @@ upload these keys to GitHub and CircleCI.
 
 After you have created the GitHub repository for your project and enabled builds for it on CircleCI:
 
-1) Add the _private_ key to CircleCI here: https://circleci.com/gh/maxalbert/my_test_project/edit#ssh
+1) Add the _private_ key to CircleCI here: https://circleci.com/gh/{{ cookiecutter.github_username }}/{{ cookiecutter.github_project_name }}/edit#ssh
 
 *Note:* In the input box, make sure you specify `github.com` as the Hostname.
 
-2) Add the _public_ key to GitHub here: https://github.com/maxalbert/my_test_project/settings/keys
+2) Add the _public_ key to GitHub here: https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.github_project_name }}/settings/keys
 
 *Note:* Make sure you enable the checkbox "Allow write access".
