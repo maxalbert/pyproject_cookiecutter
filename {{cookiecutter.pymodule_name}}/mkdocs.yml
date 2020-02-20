@@ -30,6 +30,7 @@ plugins:
   #         source_repo: "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.github_project_name }}/tree/master/"
   - mknotebooks:
       execute: false
+      # write_markdown: true
       # preamble: "notebook_preamble.py"
       # timeout: 600
 
